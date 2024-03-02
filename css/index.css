@@ -1,0 +1,114 @@
+
+/* Most Customized Photo Mounts section */
+.custom-mounts{
+    display: flex;
+    /* max-width: 25%; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    padding: 10px;
+    grid-gap: 20px;
+}
+.custom-mounts .card{
+    /* 291b1b */
+    background-color: #1b1c29;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.custom-mount-container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.custom-mount-container img{
+    object-fit: cover;
+}
+
+.custom-mount-details{
+    padding: 10px;
+}
+.custom-mount-details h3{
+    color: white;
+    font-size: 18px;
+    font-family: Linotte;
+}
+.custom-mount-details> p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/* Photo Mounts section */
+.photomounts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px;
+    grid-gap: 20px;
+}
+.photomounts .card{
+    background-color: #1c1b29;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.photomount-container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+
+.photomount-details{
+    padding: 10px;
+}
+.photomount-details h3{
+    color: white;
+    font-size: 20px;
+    font-family: Linotte;
+}
+.photomount-details> p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.categories .mount-box {
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    cursor: pointer;
+    transition: .5s ease;
+    border: 2px solid rgba(68, 68, 68, 0.3);
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+
+.trending-products-card .card .card-wrapper .profile {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.trending-products-card .card .card-wrapper .profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.trending-products-card .card .card-wrapper h2 {
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: Batangas;
+}
+
+.trending-products-card .card .card-wrapper p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #0d71fc;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+
+.big-wrapper{
+    padding: 1.7rem 0 0 0;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1c1b29;
+}
+
+.contact .contact-content {
+    max-width: 800px;
+    text-align: center;
+    justify-content: center;
+}
+hr{
+    background-color: white;
+    border: 2px solid silver;
+    height: 50vh;
+}
+.contact .contact-content h2 {
+    font-size: 28px;
+    font-family: Batangas;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact .contact-content p {
+    color: silver;
+    font-size: 20px;
+    font-family: Linotte;
+}
+
+.contact-contain {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.contact-contain .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-contain .contactInfo .contact-box {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.contact-contain .contactInfo .contact-box .contact-icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75em;
+    transition: 0.5s;
+    display: none;
+}
+
+.contact-contain .contactInfo .contact-box:hover .contact-icon {
+    background: #00bcd4;
+    color: #fff;
+}
+
+.contact-contain .contactInfo .contact-box .contact-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    color: #fff;
+    font-family: Linotte;
+}
+
+.contact-contain .contactInfo .contact-box .contact-text p{
+    color: silver;
+    font-family: Linotte;
+}
+
+.contact-contain .contactInfo .contact-box .contact-text h3 {
+    font-weight: 300;
+    color: #fff;
+    font-family: Batangas;
+}
+
+.contact-contain .contactInfo .txt {
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 50px solid #e91e63;
+    line-height: 1em;
+}
+
+.contact-contain .contactForm {
+    position: relative;
+    width: 50%;
+}
+.contact-contain .contactForm h2{
+    font-size: 24px;
+    color: #ffffff;
+    font-family: Batangas;
+}
+.contact-contain .contactForm .inputBox input,
+.contact-contain .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contact-contain .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #666;
+    transition: 0.5s;
+}
+.contact-contain .contactForm .inputBox input:focus~span,
+.contact-contain .contactForm .inputBox textarea:focus~span,
+.contact-contain .contactForm .inputBox input:valid~span,
+.contact-contain .contactForm .inputBox textarea:valid~span{
+    color: #1c1b29;
+    font-size: 1.1em;
+    transform: translateY(-20px);
+}
+.contact-contain .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Contact Form rsponsiveness */
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .contact-contain{
+        flex-direction: column;
+        gap: 10px;
+    }.contact-contain .contactInfo, .contact-contain .contactForm{
+        width: 100%;
+    }
+    .contact-contain .contactForm{
+        padding: 50px, 30px;
+    }
+    hr{
+        width: 100%;
+        height: 0.5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

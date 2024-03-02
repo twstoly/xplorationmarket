@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.container{
+    width: 100%;
+}
+/* Information section */
+dd:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #5a2484;
+}
+
+.first {
+    color: #5a2484;
+    font-weight: 500;
+}
+
+.second {
+    color: red;
+}
+
+#reviews-data .card-body p {
+    color: #5a2484;
+    line-height: 30px;
+}
+
+.heading {
+    font-family: Linotte;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.2;
+}
+
+/* Prices Forms */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_item {
+    position: relative;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.form__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.form__label {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #e6e5e5, #ffffff, #ebf3f7, #f0ebe3);
+    background-size: 300% 300%;
+    animation: color 24s ease-in-out infinite;
+    border: 2px solid rgb(224, 240, 250);
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+    /* border: 0.5px solid rgb(238, 238, 238); */
+    cursor: pointer;
+    transition: background-color 0.3s,
+        border-color 0.3s;
+}
+
+.form__label__categories {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-size: 300% 300%;
+    animation: color 24s ease-in-out infinite;
+    border: 2px solid rgb(224, 240, 250);
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s,
+        border-color 0.3s;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.form__label-item {
+    display: flex;
+    align-items: center;
+}
+
+.form__info {
+    padding: 0 10px;
+}
+
+.form__info-title {
+    font-size: 24px;
+    padding-bottom: 5px;
+    font-family: Linotte;
+}
+
+.form__info_category-title {
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-family: Linotte;
+    color: #1c1b29;
+}
+
+.form__info-desc {
+    font-size: 18px;
+    color: #3daff5;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form__price {
+    font-size: 20px;
+    font-family: Linotte;
+    color: red;
+}
+
+.form__input:checked~.form__label .form__img {
+    opacity: 1;
+}
+
+/* Notebook Customizations */
+.notebook__form__label {
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #e6e5e5, #ffffff, #ebf3f7, #f0ebe3);
+    background-size: 300% 300%;
+    animation: color 24s ease-in-out infinite;
+    border: 2px solid rgb(224, 240, 250);
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+    /* border: 0.5px solid rgb(238, 238, 238); */
+    cursor: pointer;
+    transition: background-color 0.3s,
+        border-color 0.3s;
+}
+
+.notebook__form__info img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.notebook__form__info-title {
+    padding: 20px;
+    font-size: 24px;
+    padding-bottom: 5px;
+    font-family: Linotte;
+}
+
+.notebook__form__info_category-title {
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-family: Linotte;
+    color: #1c1b29;
+}
+
+.notebook__form__info-desc {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #666768;
+    font-family: 'Nunito', sans-serif;
+}
+
+.notebook__form__price {
+    padding: 0 20px 20px;
+    font-size: 20px;
+    font-family: Linotte;
+    color: red;
+}
+
+
+/* Form Prices Responsiveness */
+@media(max-width:410px) {
+    .form__price {
+        font-size: 18px;
+    }
+
+    .form__info {
+        font-size: 0 10px;
+    }
+
+    .form__info-desc {
+        font-size: 18px;
+    }
+
+    .form_item {
+        margin: auto;
+    }
+}

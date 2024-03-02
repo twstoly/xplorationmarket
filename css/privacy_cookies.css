@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+}
+.contain{
+    width: 100%;
+}
+.contain h3{
+    font-family: Batangas;
+    font-size: 28px;
+    margin-top: 20px;
+    color: #1b1c29;
+}
+.contain p{
+    font-family: linotte;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+}
+.contain ul li{
+    font-family: linotte;
+    font-size: 20px;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 40px;
+    color: rgb(110, 110, 110);
+}
+.contain ul li b{
+    color: #1b1c29;
+}
+.big-wrapper{
+    width: 100%;
+}
+ 
