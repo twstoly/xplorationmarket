@@ -19,7 +19,7 @@
     text-align: center;
     justify-content: center;
 }
-hr{
+.contact-contain hr{
     background-color: white;
     border: 2px solid silver;
     height: 50vh;

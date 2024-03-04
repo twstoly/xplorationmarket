@@ -120,116 +120,13 @@
 
   </div>
 
+  <footer class="footer" id="contact">
 
-    <footer class="footer" id="contact">
-      <div class="container">
-        <div class="footer-row">
-          <div class="footer-col">
-            <h3>xplorationmarket</h3>
-            <ul>
-              <li class="col-6  col-sm-3 col-md-3">
-                <a href="contact.html">
-                  Contact</a>
-              </li>
-              <li>
-                <a href="about.html">
-                  About us</a>
-              </li>
-              <li>
-                <a href="index.html#faqs">
-                  FAQs</a>
-              </li>
-              <li>
-                <a href="call-for-content-creators.html">
-                  Work With Us</a>
-              </li>
-              <li>
-                <a href="our-prices.html">
-                  Our Prices </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Need Help?</h3>
-            <ul>
-              <li>
-                <a href="">
-                  newsletter</a>
-              </li>
-              <li>
-                <a href="return_policy.html">
-                  Return Policy</a>
-              </li>
-              <li>
-                <a href="payment.html">
-                  Payment & delivery</a>
-              </li>
-              <li>
-                <a href="privacy_cookies.html">
-                  Privacy & Cookies Policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>Quotes</h3>
-            <ul>
-              <li>
-                <a href="">
-                  Motivational Quotes</a>
-              </li>
-              <li>
-                <a href="">
-                  Inspirational Quotes</a>
-              </li>
-              <li>
-                <a href="">
-                  Love Expressions & Lines</a>
-              </li>
-              <li>
-                <a href="">
-                  Innovators Quotes</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h3>Follow-us</h3>
-            <div class="social-icon">
-              <a href="https://www.facebook.com/profile.php?id=100090063491724" target="_blank">
-                <i class="fab fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.instagram.com/xplorationmarket/" target="_blank">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.tiktok.com/@xplorationmarket?lang=en" target="_blank"><i
-                  class="fa-brands fa-tiktok"></i>
-              </a>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h3>Xploration Market App</h3>
-            <!-- <p>Get Access to Exclusive offers</p> -->
-            <div class="store-icons">
-              <div class="left-store">
-                <a href="https://play.google.com/store/apps/details?id=com.twsts.market&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
-                  <img src="src/play-store-icon.png" alt=""></a>
-
-              </div>
-              <div class="right-store">
-                <img src="src/app-store-icon.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div><br>
-        <div class="footer-row">
-          <p>© Xploration Market 2024 </p>
-        </div>
-      </div>
-    </footer>
+  </footer>
 </body>
+
+<!-- Footer -->
+<script src="js/footer.js"></script>
 
 <!-- Swipper Js -->
 <script src="js/vanilla-tilt.js"></script>
@@ -267,8 +164,7 @@
   window.onload = calcScrollValue;
 
 
-  // Select The Elements
-  var toggle_btn;
+   var toggle_btn;
   var big_wrapper;
   var menu_item;
   var hamburger_menu;
@@ -284,32 +180,9 @@
 
   declare();
 
-  let dark = false;
-
   function toggleAnimation() {
-    // Clone the wrapper
-    dark = !dark;
-    let clone = big_wrapper.cloneNode(true);
-    if (dark) {
-      clone.classList.remove("light");
-      clone.classList.add("dark");
-    } else {
-      clone.classList.remove("dark");
-      clone.classList.add("light");
-    }
-    clone.classList.add("copy");
-    main.appendChild(clone);
-
     document.body.classList.add("stop-scrolling");
-
-    clone.addEventListener("animationend", () => {
-      document.body.classList.remove("stop-scrolling");
-      big_wrapper.remove();
-      clone.classList.remove("copy");
-      // Reset Variables
-      declare();
       events();
-    });
   }
 
   function events() {
