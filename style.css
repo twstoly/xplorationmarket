@@ -256,6 +256,7 @@ header .container {
 }
 
 .logo img {
+    border-radius: 50%;
     width: 40px;
     margin-right: 0.6rem;
     margin-top: -0.6rem;
@@ -1147,6 +1148,7 @@ header .container {
     border-radius: 25px;
     background-color: white;
 }
+.hidden{}
 
 .reviews-card .slide-container .card-wrapper .card .image-content,
 .reviews-card .slide-container .card-wrapper .card .card-content {
@@ -1288,20 +1290,6 @@ dd:before {
 .footer {
     background-color: #12111a;
     padding: 25px 0;
-}
-
-/* Animations */
-.hidden {
-    /* opacity: 0; */
-    filter: blur(5px);
-    transform: translateX(-1%);
-    transition: all 0.5s;
-}
-
-.show {
-    /* opacity: 1; */
-    filter: blur(0);
-    transform: translateX(0);
 }
 
 .form .form__item:nth-child(2) {

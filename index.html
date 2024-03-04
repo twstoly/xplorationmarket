@@ -770,30 +770,10 @@
 
 <script type="text/javascript">
   <!-- Scroll Reveal -->
-  ScrollReveal({
-    reset: true,
-    distance: '60px',
-    duration: 1000,
-    delay: 200
-  });
-
-  ScrollReveal().reveal('.text', { origin: "bottom", interval: 200 })
-  ScrollReveal().reveal('.hook', { origin: "bottom", interval: 200 })
+  
 
   // Scroll Animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log("entry", entry)
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el));
+  
 
 
   // Scroll To Top Progressbar
