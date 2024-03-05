@@ -192,7 +192,7 @@ html {
     --backgroundColor: #f1fcfb;
     --darkOne: #312f3a;
     --darkTwo: white;
-    --lightOne: #ADADAD;
+    --lightOne: #dddddd;
     --lightTwo: #aaa;
 }
 
@@ -294,7 +294,7 @@ header .container {
 .btn {
     display: inline-block;
     padding: 0.9rem 1.9rem;
-    color: #fff !important;
+    color: #000000 !important;
     background-color: var(--mainColor);
     border-radius: 16px;
     text-transform: capitalize;
@@ -981,9 +981,6 @@ header .container {
 
 /* Resposive Website */
 @media(max-width:767px) {
-    .person {
-        display: none;
-    }
 
     /* For Notebooks and photomounts */
     .photomounts {
