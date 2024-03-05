@@ -810,7 +810,7 @@ header .container {
 .form__price {
     font-size: 20px;
     font-family: Linotte;
-    color: red;
+    color: #041562;
 }
 
 .form__input:checked~.form__label .form__img {
@@ -1111,7 +1111,7 @@ header .container {
 .pv-archiveText {
     white-space: nowrap;
     text-overflow: ellipsis;
-    color: red;
+    color: #041562;
     overflow: hidden;
 }
 
@@ -1262,7 +1262,7 @@ header .container {
 }
 
 /* Information section */
-dd:before {
+/* .support:before {
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
     display: inline-block;
@@ -1270,15 +1270,17 @@ dd:before {
     vertical-align: middle;
     font-weight: 900;
     color: #5a2484;
-}
+} */
 
 .first {
+    padding: 10px;
     color: #5a2484;
     font-weight: 500;
 }
 
 .second {
-    color: red;
+    padding-left: 10px;
+    color: #041562;
 }
 
 #reviews-data .card-body p {
