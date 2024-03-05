@@ -404,6 +404,7 @@ header .container {
 
 .person {
     width: 100%;
+    height: auto;
     object-fit: cover;
     transform: translate(15%, 25px);
 }
@@ -812,7 +813,6 @@ header .container {
     font-family: Linotte;
     color: #041562;
 }
-
 .form__input:checked~.form__label .form__img {
     opacity: 1;
 }
