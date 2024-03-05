@@ -981,6 +981,9 @@ header .container {
 
 /* Resposive Website */
 @media(max-width:767px) {
+    .person {
+        display: none;
+    }
 
     /* For Notebooks and photomounts */
     .photomounts {
@@ -1149,8 +1152,6 @@ header .container {
     border-radius: 25px;
     background-color: white;
 }
-
-.container{}
 
 .reviews-card .slide-container .card-wrapper .card .image-content,
 .reviews-card .slide-container .card-wrapper .card .card-content {
