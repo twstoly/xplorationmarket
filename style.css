@@ -404,6 +404,7 @@ header .container {
 
 .person {
     width: 100%;
+    object-fit: cover;
     transform: translate(15%, 25px);
 }
 
@@ -1148,6 +1149,8 @@ header .container {
     border-radius: 25px;
     background-color: white;
 }
+
+.container{}
 
 .reviews-card .slide-container .card-wrapper .card .image-content,
 .reviews-card .slide-container .card-wrapper .card .card-content {
