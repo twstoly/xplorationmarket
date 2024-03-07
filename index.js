@@ -1,4 +1,4 @@
- <!-- Scroll Reveal -->
+// Scroll Reveal 
   ScrollReveal({
     reset: true,
     distance: '60px',

@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Batangas';
     src: url('../fonts/Batangas\ Bold\ 700.otf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Linotte';
     src: url('../fonts/Linotte\ Regular.otf');
+    font-display: swap;
 }
 
 .creator {
@@ -16,7 +18,7 @@
     flex-direction: column;
 }
 
-.creator h3{
+.creator h3 {
     font-family: 'Comfortaa';
     font-weight: bolder;
     font-size: 28px;
@@ -46,10 +48,14 @@
     position: relative;
     width: 50%;
 }
-.creator-contain .creatorForm h3, .creator-contain .creatorInfo h3{
+
+.creator-contain .creatorForm h3,
+.creator-contain .creatorInfo h3 {
     padding: 20px 0;
 }
-.creator-contain .creatorForm ul li, .creator-contain .creatorInfo ul li{
+
+.creator-contain .creatorForm ul li,
+.creator-contain .creatorInfo ul li {
     list-style: disc;
     padding: 10px 0;
     font-family: linotte;
@@ -57,7 +63,9 @@
     font-size: 20px;
     line-height: 50px;
 }
-.creator-contain .creatorForm p, .creator-contain .creatorInfo p{
+
+.creator-contain .creatorForm p,
+.creator-contain .creatorInfo p {
     font-family: linotte;
     padding: 20px 0;
     color: grey;
@@ -71,9 +79,10 @@
     .creator {
         padding: 50px;
     }
-    .container{
-    margin: 0 ;
-    padding: 0;
+
+    .container {
+        margin: 0;
+        padding: 0;
     }
 
     .creator-contain {

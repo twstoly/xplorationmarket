@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Batangas';
     src: url('../fonts/Batangas\ Bold\ 700.otf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Linotte';
     src: url('../fonts/Linotte\ Regular.otf');
+    font-display: swap;
 }
 
 *,
@@ -357,9 +359,11 @@ header .container {
     .hamburger-menu {
         display: flex;
     }
-    header{
+
+    header {
         padding: 25px;
     }
+
     .links {
         position: fixed;
         top: 0;
@@ -498,7 +502,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.footer-col p{
+.footer-col p {
     color: silver;
 }
 
@@ -548,7 +552,7 @@ ul {
     color: white;
 }
 
-.footer-col .store-icons{
+.footer-col .store-icons {
     display: flex;
     align-items: left;
     justify-content: left;
@@ -559,15 +563,17 @@ ul {
     padding: 0;
 }
 
-.footer-col .store-icons .right-store img{
+.footer-col .store-icons .right-store img {
     height: 40px;
     width: auto;
 }
-.footer-col .store-icons .left-store img{
+
+.footer-col .store-icons .left-store img {
     height: 40px;
     width: auto;
 }
-.footer-row p{
+
+.footer-row p {
     color: silver;
 }
 
