@@ -261,8 +261,8 @@ header .container {
 .logo img {
     border-radius: 50%;
     width: 40px;
-    margin-right: 0.6rem;
-    margin-top: -0.6rem;
+    margin-right: 20px;
+    margin-top: -4rem;
 }
 
 .logo h3 {
@@ -560,6 +560,10 @@ header .container {
     .person {
         width: 100%;
         transform: none;
+    }
+    .logo img{
+        
+    margin-top: 0;
     }
 
     .logo h3 {

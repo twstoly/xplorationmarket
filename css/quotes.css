@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@font-face {
+    font-family: 'Batangas';
+    src: url('fonts/Batangas\ Bold\ 700.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linotte';
+    src: url('fonts/Linotte\ Regular.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bookman';
+    src: url('fonts/bookman\ old\ style.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Feather';
+    src: url('fonts/feather_bold.ttf');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+
+.heading {
+    font-family: Linotte;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/* Most Customized Photo Mounts section */
+.custom-mounts {
+    display: flex;
+    /* max-width: 25%; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+.custom-mounts .card {
+    /* 291b1b */
+    background-color: #1b1c29;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.custom-mount-container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.custom-mount-container img {
+    object-fit: cover;
+}
+
+.custom-mount-details {
+    padding: 10px;
+}
+
+.custom-mount-details h3 {
+    color: white;
+    font-size: 18px;
+    font-family: Linotte;
+}
+
+.custom-mount-details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}

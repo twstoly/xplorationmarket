@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy & Cookies Policy - Xploration Market</title>
     <meta name="description"
-    content="What happens to photos we don't print? They just disappear into our phones, right? What a shame that would be. Don't let that happen. Instead, make sure your photos are seen and remembered with custom photo mounts. So, what are photo mounts? They're a great way to display your photos and have them customized to your liking. They come in different sizes to fit your photos perfectly. Want to know more? Visit our website or Whatsapp us for a quote today">
+        content="What happens to photos we don't print? They just disappear into our phones, right? What a shame that would be. Don't let that happen. Instead, make sure your photos are seen and remembered with custom photo mounts. So, what are photo mounts? They're a great way to display your photos and have them customized to your liking. They come in different sizes to fit your photos perfectly. Want to know more? Visit our website or Whatsapp us for a quote today">
     <link rel="shortcut icon" href="/src/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -26,15 +26,22 @@
     <div class="elfsight-app-3d74d477-e136-4b32-97fb-f7cb464e1c97" data-elfsight-app-lazy></div>
     <!-- Arrow Btn -->
     <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
+        <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
     </div>
 
     <div class="big-wrapper light">
-        <img src="src/shape.png" class="shape" alt="">
+        <img src="src/shape.webp" class="shape" alt="">
         <header>
             <div class="container">
                 <div class="logo">
-                    <img src="src/logo.png" alt="" srcset="">
+                    <picture>
+                        <source class="person" srcset="../src/logo_large.webp" media="(min-width:767px)" />
+                        <source class="person" srcset="../src/logo_medium.webp" media="(min-width:576px)" />
+                        <source class="person" srcset="../src/logo_small.webp" media="(min-width:410px)" />
+                        <source class="person" srcset="../src/logo_small.webp" media="(max-width:410px)" />
+
+                        <img src="../src/logo.webp" width="40px" height="40px" loading="lazy" alt="logo" class="person">
+                    </picture>
                     <h3>Xploration Market.</h3>
                 </div>
                 <div class="links">
@@ -391,14 +398,67 @@
         </div>
     </div><br>
 
-    <!-- Footer -->
+
     <footer class="footer" id="contact">
-
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h3>xplorationmarket</h3>
+                    <ul>
+                        <li class="col-6 col-sm-3 col-md-3"> <a href="contact.html"> Contact</a> </li>
+                        <li> <a href="about.html"> About us</a> </li>
+                        <li> <a href="#faqs"> FAQs</a> </li>
+                        <li> <a href="call-for-content-creators.html"> Work With Us</a> </li>
+                        <li> <a href="our-prices.html"> Our Prices </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Need Help?</h3>
+                    <ul>
+                        <li> <a href=""> newsletter</a> </li>
+                        <li> <a href="return_policy.html"> Return Policy</a> </li>
+                        <li> <a href="payment.html"> Payment & delivery</a> </li>
+                        <li> <a href="privacy_cookies.html"> Privacy & Cookies Policy</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quotes</h3>
+                    <ul>
+                        <li> <a href="quotes.html#motivation"> Motivational Quotes</a> </li>
+                        <li> <a href="quotes.html#inspiration"> Inspirational Quotes</a> </li>
+                        <li> <a href="quotes.html#love"> Love Expressions</a> </li>
+                        <li> <a href="quotes.html#innovation"> Innovators Quotes</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow-us</h3>
+                    <div class="social-icon"> <a href="https://www.facebook.com/profile.php?id=100090063491724"
+                            aria-label="Facebook" target="_blank"> <i class="fab fa-facebook" aria="true"></i> </a> <a
+                            href=""> <i class="fab fa-twitter" aria-label="Twitter" aria="true"></i> </a> <a
+                            href="https://www.instagram.com/xplorationmarket/" aria-label="Instagram" target="_blank">
+                            <i class="fab fa-instagram" aria="true"></i> </a> <a
+                            href="https://www.tiktok.com/@xplorationmarket?lang=en" aria-label="TikTok"
+                            target="_blank"><i class="fa-brands fa-tiktok"></i> </a> </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Xploration Market App</h3> <!-- <p>Get Access to Exclusive offers</p> -->
+                    <div class="store-icons">
+                        <div class="left-store"> <a
+                                href="https://play.google.com/store/apps/details?id=com.twsts.market&pcampaignid=web_share"
+                                target="_blank" rel="noopener noreferrer"> <img loading="lazy"
+                                    src="src/play-store-icon.webp" alt=""></a> </div>
+                        <div class="right-store"> <img loading="lazy" src="src/app-store-icon.webp" alt=""> </div>
+                    </div>
+                </div>
+            </div>
+            <hr><br>
+            <div class="footer-row">
+                <p>© Xploration Market 2024 </p>
+            </div>
+        </div>
     </footer>
+    </div>
 </body>
-
-<!-- Footer -->
-<script src="js/footer.js"></script>
 
 <script type="text/javascript">
     // Scroll To Top Progressbar

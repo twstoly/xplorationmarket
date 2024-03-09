@@ -21,12 +21,26 @@
 </head>
 
 <body>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <!-- WhatsApp Chat Icon -->
+  <div class="elfsight-app-3d74d477-e136-4b32-97fb-f7cb464e1c97" data-elfsight-app-lazy></div>
+  <!-- Arrow Btn -->
+  <div id="progress">
+    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
   <div class="big-wrapper light">
-    <img src="src/shape.png" class="shape" alt="">
+    <img src="src/shape.webp" class="shape" alt="">
     <header>
       <div class="container">
         <div class="logo">
-          <img src="src/logo.png" alt="" srcset="">
+          <picture>
+            <source class="person" srcset="../src/logo_large.webp" media="(min-width:767px)" />
+            <source class="person" srcset="../src/logo_medium.webp" media="(min-width:576px)" />
+            <source class="person" srcset="../src/logo_small.webp" media="(min-width:410px)" />
+            <source class="person" srcset="../src/logo_small.webp" media="(max-width:410px)" />
+
+            <img src="../src/logo.webp" width="40px" height="40px" loading="lazy" alt="logo" class="person">
+          </picture>
           <h3>Xploration Market.</h3>
         </div>
         <div class="links">
@@ -59,11 +73,11 @@
         <h3>CALLING ALL CONFIDENT, VIBRANT AND CREATIVE CONTENT CREATORS</h3>
         <div class="creator-contain">
           <div class="creatorInfo">
-            <img src="src/content1.png" alt="">
+            <img src="src/content1.webp" alt="">
           </div>
           <hr class="horizontal-line">
           <div class="creatorForm">
-            <!-- <img src="src/1.png" alt=""> -->
+            <!-- <img src="src/1.webp" alt=""> -->
             <h3>ARE YOU:</h3>
             <ul>
               <li>CONFIDENT</li>
@@ -81,11 +95,11 @@
         <h3>EXAMPLES OF CONTENT REQUIRED</h3>
         <div class="creator-contain">
           <div class="creatorInfo">
-            <img src="src/content2.jpg" alt="">
+            <img src="src/content2.webp" alt="">
           </div>
           <hr class="horizontal-line">
           <div class="creatorForm">
-            <!-- <img src="src/1.png" alt=""> -->
+            <!-- <img src="src/1.webp" alt=""> -->
             <h3>PERSONAL STORIES</h3>
             <p>We want to hear your real life stories. Share your story with us on how life influenced your
               choices in taking the first step to try ou products
@@ -96,7 +110,6 @@
               the kind of responce you got from the people you gifted.</p>
           </div>
         </div>
-
 
         <div class="creator-contain">
           <div class="creatorInfo">
@@ -112,18 +125,18 @@
           </div>
           <hr class="horizontal-line">
           <div class="creatorForm">
-            <img src="src/content6.png" alt="">
+            <img src="src/content6.webp" alt="">
 
           </div>
         </div><br>
 
         <div class="creator-contain">
           <div class="creatorInfo">
-            <img src="src/content3.jpg" alt="">
+            <img src="src/content3.webp" alt="">
           </div>
           <hr class="horizontal-line">
           <div class="creatorForm">
-            <!-- <img src="src/1.png" alt=""> -->
+            <!-- <img src="src/1.webp" alt=""> -->
             <h3>EVERYTHING GOES!</h3>
             <p>There is no limit to what you can create, as long as your mind can imagine it! <br>
 
@@ -156,7 +169,7 @@
           </div>
           <hr class="horizontal-line">
           <div class="creatorForm">
-            <img src="src/content5.jpg" alt="">
+            <img src="src/content5.webp" alt="">
 
           </div>
         </div><br>
@@ -164,11 +177,11 @@
         <h3>WHAT'S IN IT FOR YOU?</h3>
         <div class="creator-contain">
           <div class="creatorInfo">
-            <img src="src/content4.png" alt="">
+            <img src="src/content4.webp" alt="">
           </div>
           <hr class="horizontal-line">
           <div class="creatorForm">
-            <!-- <img src="src/1.png" alt=""> -->
+            <!-- <img src="src/1.webp" alt=""> -->
             <h3>NO GOOD WORK GOES UNREWARDED!</h3>
             <p>We compensate based on amount of content and the interest it generates.
 
@@ -202,11 +215,64 @@
   </div>
 
   <footer class="footer" id="contact">
-
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h3>xplorationmarket</h3>
+          <ul>
+            <li class="col-6 col-sm-3 col-md-3"> <a href="contact.html"> Contact</a> </li>
+            <li> <a href="about.html"> About us</a> </li>
+            <li> <a href="index.html#faqs"> FAQs</a> </li>
+            <li> <a href="call-for-content-creators.html"> Work With Us</a> </li>
+            <li> <a href="our-prices.html"> Our Prices </a> </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Need Help?</h3>
+          <ul>
+            <li> <a href=""> newsletter</a> </li>
+            <li> <a href="return_policy.html"> Return Policy</a> </li>
+            <li> <a href="payment.html"> Payment & delivery</a> </li>
+            <li> <a href="privacy_cookies.html"> Privacy & Cookies Policy</a> </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li> <a href="quotes.html#motivation"> Motivational Quotes</a> </li>
+            <li> <a href="quotes.html#inspiration"> Inspirational Quotes</a> </li>
+            <li> <a href="quotes.html#love"> Love Expressions</a> </li>
+            <li> <a href="quotes.html#innovation"> Innovators Quotes</a> </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Follow-us</h3>
+          <div class="social-icon"> <a href="https://www.facebook.com/profile.php?id=100090063491724"
+              aria-label="Facebook" target="_blank"> <i class="fab fa-facebook" aria="true"></i> </a> <a href=""> <i
+                class="fab fa-twitter" aria-label="Twitter" aria="true"></i> </a> <a
+              href="https://www.instagram.com/xplorationmarket/" aria-label="Instagram" target="_blank"> <i
+                class="fab fa-instagram" aria="true"></i> </a> <a
+              href="https://www.tiktok.com/@xplorationmarket?lang=en" aria-label="TikTok" target="_blank"><i
+                class="fa-brands fa-tiktok"></i> </a> </div>
+        </div>
+        <div class="footer-col">
+          <h3>Xploration Market App</h3> <!-- <p>Get Access to Exclusive offers</p> -->
+          <div class="store-icons">
+            <div class="left-store"> <a
+                href="https://play.google.com/store/apps/details?id=com.twsts.market&pcampaignid=web_share"
+                target="_blank" rel="noopener noreferrer"> <img loading="lazy" src="src/play-store-icon.webp"
+                  alt=""></a> </div>
+            <div class="right-store"> <img loading="lazy" src="src/app-store-icon.webp" alt=""> </div>
+          </div>
+        </div>
+      </div>
+      <hr><br>
+      <div class="footer-row">
+        <p>© Xploration Market 2024 </p>
+      </div>
+    </div>
   </footer>
+  </div>
 </body>
-
-<!-- Footer -->
-<script src="js/footer.js"></script>
+<script src="src/index.js"></script>
 
 </html>
