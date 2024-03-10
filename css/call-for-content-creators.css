@@ -72,7 +72,7 @@
 
 .creator-contain .creatorInfo p,
 .creator-contain .creatorForm p {
-    color: silver;
+    color: rgb(0, 0, 0);
 }
 
 .creator-contain .creatorForm {
@@ -99,7 +99,7 @@
 .creator-contain .creatorInfo p {
     font-family: linotte;
     padding: 20px 0;
-    color: grey;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     line-height: 50px;
 }
