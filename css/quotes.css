@@ -45,7 +45,6 @@
     text-align: center;
 }
 
-
 /* Most Customized Photo Mounts section */
 .custom-mounts {
     display: flex;
@@ -85,4 +84,21 @@
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
+}
+
+@media(max-width:767px) {
+
+    /* For Notebooks and photomounts */
+    .custom-mounts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+        grid-gap: 20px;
+    }
+
+    .custom-mount-container img {
+        height: 200px;
+        object-fit: cover;
+    }
+
 }
