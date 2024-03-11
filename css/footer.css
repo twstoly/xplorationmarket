@@ -111,6 +111,10 @@ ul {
     .custom-image-col {
         width: 50%;
     }
+    .footer .container{
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media(max-width:576px) {
