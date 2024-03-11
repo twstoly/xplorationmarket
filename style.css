@@ -298,7 +298,7 @@ header .container {
 .btn {
     display: inline-block;
     padding: 0.9rem 1.9rem;
-    color: #000000 !important;
+    color: #ffffff !important;
     background-color: var(--mainColor);
     border-radius: 16px;
     text-transform: capitalize;
@@ -975,7 +975,9 @@ header .container {
     width: 12px;
     background-color: hsl(163, 78%, 2%);
 }
-
+.btn{
+    
+}
 .heading {
     font-family: Linotte;
     font-size: 28px;
