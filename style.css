@@ -46,6 +46,7 @@
 }
 
 .custom-mounts .card {
+    align-items: stretch;
     /* 291b1b */
     background-color: #1b1c29;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
@@ -86,6 +87,7 @@
 }
 
 .photomounts .card {
+    
     background-color: #1c1b29;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
@@ -104,8 +106,9 @@
     font-size: 16px;
     font-family: Linotte;
 }
-
+.card{}
 .photomount-details>p {
+    font-family: Linotte;
     color: #a0a0a0;
     font-size: 15px;
     line-height: 20px;
@@ -1081,7 +1084,7 @@ header .container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 
-    .photomount-details>p {
+    .notebooks .photomount-details>p {
         display: none;
     }
 
