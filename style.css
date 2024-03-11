@@ -87,7 +87,6 @@
 }
 
 .photomounts .card {
-    
     background-color: #1c1b29;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
@@ -106,7 +105,7 @@
     font-size: 16px;
     font-family: Linotte;
 }
-.card{}
+
 .photomount-details>p {
     font-family: Linotte;
     color: #a0a0a0;
@@ -125,8 +124,6 @@
     border: 2px solid rgba(68, 68, 68, 0.3);
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
-
-
 
 .shipping-information .card {
     border: 2px solid rgba(68, 68, 68, 0.3);
@@ -895,10 +892,12 @@ header .container {
 }
 
 .accord .content {
-    column-rule-color: #555;
+    font-family: Linotte;
+    font-weight: 100;
+    column-rule-color: rgb(167, 164, 164);
     padding: 0 10px;
     line-height: 26px;
-    font-size: 16px;
+    font-size: 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
@@ -1082,7 +1081,12 @@ header .container {
 @media(max-width:576px) {
     .photomounts {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        margin: 0;
+        padding: 0;
+        gap: 20px;
     }
+
+    .label{}
 
     .notebooks .photomount-details>p {
         display: none;
