@@ -76,7 +76,6 @@
     line-height: 20px;
     font-weight: 400;
 }
-.testimonials{}
 
 /* Photo Mounts section */
 .photomounts {
@@ -305,6 +304,17 @@ header .container {
     transition: 0.3s;
 }
 
+.custom_btn {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    margin: 5px;
+    color: #000000 !important;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
 .cta .btn {
     margin-bottom: 10px;
 }
@@ -397,9 +407,10 @@ header .container {
 
 .text {
     color: var(--lightOne);
-    font-size: 20px;
+    font-size: 24px;
     margin: 1.9rem 0 2.5rem;
     line-height: 2.3;
+    font-family: Linotte;
 }
 
 .showcase-area .btn {
@@ -414,8 +425,7 @@ header .container {
 }
 
 .toggle-btn {
-    visibility: hidden;
-    display: inline-block;
+    display: none;
     border: none;
     background: var(--darkTwo);
     color: var(--backgroundColor);
@@ -543,7 +553,7 @@ header .container {
     }
 
     .showcase-area {
-        padding: 2.5rem 0;
+        padding: 10px 0;
         max-width: 700px;
         margin: 0 auto;
     }
@@ -551,7 +561,7 @@ header .container {
     .showcase-area .container {
         grid-template-columns: 1fr;
         justify-content: center;
-        grid-gap: 2rem;
+        grid-gap: 10px;
     }
 
     .big-title {
@@ -1084,7 +1094,7 @@ header .container {
         gap: 20px;
     }
 
-    .custom-mounts{
+    .custom-mounts {
         padding: 10px;
     }
 
