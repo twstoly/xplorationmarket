@@ -135,8 +135,8 @@
     position: fixed;
     bottom: 100px;
     right: 20px;
-    height: 70px;
-    width: 70px;
+    height: 65px;
+    width: 65px;
     z-index: 99;
     display: none;
     justify-content: center;
@@ -148,8 +148,8 @@
 
 #progress-value {
     display: block;
-    height: calc(100% - 15px);
-    width: calc(100% - 15px);
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
     background-color: #ffffff;
     border-radius: 50%;
     display: grid;

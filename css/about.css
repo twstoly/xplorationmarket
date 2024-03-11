@@ -1,5 +1,4 @@
-
-.big-wrapper{
+.big-wrapper {
     padding: 1.7rem 0 0 0;
 }
 
@@ -12,10 +11,6 @@
     align-items: center;
     flex-direction: column;
     background-color: #1c1b29;
-}
-     .horizontal-line{
-    border: 1px solid white;
-    height: 130vh;
 }
 
 .about-contain {
@@ -32,31 +27,57 @@
     display: flex;
     flex-direction: column;
 }
-.about-contain .aboutInfo p, .about-contain .aboutForm p{
+
+.about-contain .aboutInfo p,
+.about-contain .aboutForm p {
     color: silver;
 }
+
 .about-contain .aboutForm {
     position: relative;
     width: 50%;
 }
 
-/* about Form rsponsiveness */
-@media (max-width:991px){
-    .about{
-        padding: 50px;
-    }
-    .about-contain{
-        flex-direction: column;
-        gap: 10px;
-    }.about-contain .aboutInfo, .about-contain .aboutForm{
-        width: 100%;
-    }
-    .about-contain .aboutForm{
-        padding: 50px, 30px;
-    }
-    .horizonal-line{
-        width: 100%;
-        height: 0.5%;
+@media (min-width:991px) {
+    .horizontal-line {
+        border: 1px solid white;
+        height: 130vh;
+        width: 2px;
     }
 }
 
+/* about Form rsponsiveness */
+@media (max-width:991px) {
+    .about {
+        padding: 50px;
+    }
+
+    .about-contain {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-contain .aboutInfo,
+    .about-contain .aboutForm {
+        width: 100%;
+    }
+
+    .about-contain .aboutForm {
+        padding: 50px, 30px;
+    }
+
+    .horizonal-line {
+        width: 100%;
+        height: 2px;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .horizontal-line {
+        border: 1px solid white;
+        height: 2px;
+        width: 100%;
+    }
+}

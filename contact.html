@@ -28,7 +28,7 @@
   <div class="elfsight-app-3d74d477-e136-4b32-97fb-f7cb464e1c97" data-elfsight-app-lazy></div>
   <!-- Arrow Btn -->
   <div id="progress">
-    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+    <span id="progress-value"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
   </div>
 
 
@@ -37,17 +37,24 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="src/logo.webp" alt="" srcset="">
+          <picture>
+            <source class="person" srcset="src/logo_large.webp" media="(min-width:767px)" />
+            <source class="person" srcset="src/logo_medium.webp" media="(min-width:576px)" />
+            <source class="person" srcset="src/logo_small.webp" media="(min-width:410px)" />
+            <source class="person" srcset="src/logo_small.webp" media="(max-width:410px)" />
+
+            <img src="src/logo.webp" width="40px" height="40px" loading="lazy" alt="logo" class="person">
+          </picture>
           <h3>Xploration Market.</h3>
         </div>
         <div class="links">
           <ul class="menu_item">
             <li><a href="index">Home</a></li>
             <li><a href="index#categories">Categories</a></li>
-            <li><a href="our-prices">Pricing</a></li>
+            <li><a href="index#pricing">Pricing</a></li>
             <li><a href="index#testimonials">Testimonials</a></li>
-            <li><a href="index#faqs">FAQs</a></li>
-            <li><a href="contact" class="btn">Contact Us</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="contact"  class="active" class="btn">Contact Us</a></li>
           </ul>
         </div>
         <div class="overlay"></div>
@@ -57,6 +64,13 @@
         </div>
       </div>
     </header>
+
+    <div class="bottom-area">
+      <div class="container">
+        <button class="toggle-btn">
+        </button>
+      </div>
+    </div>
 
     <section class="contact">
       <div class="contact-content">
@@ -131,7 +145,7 @@
           <ul>
             <li class="col-6 col-sm-3 col-md-3"> <a href="contact"> Contact</a> </li>
             <li> <a href="about"> About us</a> </li>
-            <li> <a href="#faqs"> FAQs</a> </li>
+            <li> <a href="index.html#faqs"> FAQs</a> </li>
             <li> <a href="call-for-content-creators"> Work With Us</a> </li>
             <li> <a href="our-prices"> Our Prices </a> </li>
           </ul>
@@ -182,80 +196,10 @@
   </footer>
   </div>
 </body>
-<!-- Swipper Js -->
-<script src="js/vanilla-tilt.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- Swiper JS -->
 
-<script type="text/javascript">
-  // Scroll To Top Progressbar
-  let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
+<script type="text/javascript" src="js/nav_progress.js"></script>
 
-    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-
-
-    if (pos > 100) {
-      scrollProgress.style.display = "flex";
-    } else {
-      scrollProgress.style.display = "none";
-    }
-
-    scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-    scrollProgress.addEventListener("click", () => {
-      document.documentElement.scrollTop = 0;
-    });
-  }
-
-
-
-  window.onscroll = calcScrollValue;
-  window.onload = calcScrollValue;
-
-
-  var toggle_btn;
-  var big_wrapper;
-  var menu_item;
-  var hamburger_menu;
-
-  function declare() {
-    toggle_btn = document.querySelector(".toggle-btn");
-    big_wrapper = document.querySelector(".big-wrapper");
-    menu_item = document.querySelector(".menu_item");
-    hamburger_menu = document.querySelector(".hamburger-menu");
-  }
-
-  const main = document.querySelector("main");
-
-  declare();
-
-  function toggleAnimation() {
-    document.body.classList.add("stop-scrolling");
-    events();
-  }
-
-  function events() {
-    toggle_btn.addEventListener("click", toggleAnimation);
-    hamburger_menu.addEventListener("click", () => {
-      big_wrapper.classList.toggle("active");
-    });
-    menu_item.addEventListener("click", () => {
-      big_wrapper.classList.remove("active");
-    });
-  }
-
-  events();
-</script>
-
-<script type="module" src="dist/bundle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </html>
