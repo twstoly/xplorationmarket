@@ -101,7 +101,7 @@
 
 .photomount-details h3 {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Linotte;
 }
 
@@ -587,7 +587,7 @@ header .container {
 
     .custom-mount-details>p {
         display: none;
-}
+    }
 
     .container {
         padding: 0 1.5rem;
@@ -1077,6 +1077,13 @@ header .container {
 }
 
 @media(max-width:576px) {
+    .photomounts {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .photomount-details>p {
+        display: none;
+    }
 
     body,
     html {
