@@ -585,6 +585,10 @@ header .container {
 
 @media screen and (max-width: 470px) {
 
+    .custom-mount-details>p {
+        display: none;
+}
+
     .container {
         padding: 0 1.5rem;
     }
@@ -1001,7 +1005,7 @@ header .container {
     /* For Notebooks and photomounts */
     .photomounts {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         padding: 10px;
         grid-gap: 20px;
     }

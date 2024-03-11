@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Linotte';
+    src: url('../fonts/Linotte\ Regular.otf');
+    font-display: swap;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -14,6 +20,7 @@ ul {
 }
 
 .footer-col h3 {
+    font-family: Linotte;
     color: white;
     text-transform: capitalize;
     font-size: 18px;
@@ -24,6 +31,7 @@ ul {
 
 .footer-col p {
     color: silver;
+    font-family: Linotte;
 }
 
 .footer-col h3::before {
@@ -45,6 +53,7 @@ ul {
     text-decoration: none;
     color: white;
     margin-top: 20px;
+    font-family: Linotte;
     text-transform: capitalize;
     transition: 0.3s ease;
     display: block;
@@ -111,13 +120,16 @@ ul {
     .custom-image-col {
         width: 50%;
     }
-    .footer .container{
-        margin: 0;
-        padding: 0;
-    }
 }
 
 @media(max-width:576px) {
+    
+    .footer .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .footer-col {
         width: 100%;
         margin-bottom: 30px;
