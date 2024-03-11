@@ -46,7 +46,6 @@
 }
 
 .custom-mounts .card {
-    align-items: stretch;
     /* 291b1b */
     background-color: #1b1c29;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
@@ -77,6 +76,7 @@
     line-height: 20px;
     font-weight: 400;
 }
+.testimonials{}
 
 /* Photo Mounts section */
 .photomounts {
@@ -891,6 +891,8 @@ header .container {
     display: none;
 }
 
+.container {}
+
 .accord .content {
     font-family: Linotte;
     font-weight: 100;
@@ -930,12 +932,14 @@ header .container {
 
 .testimonials {
     padding: 50px 0 10px 0;
+    height: 100%;
 }
 
 .testimonials-item {
     background-color: #1c1b29;
     padding: 30px;
     border-radius: 30px;
+    height: auto;
 }
 
 .testimonials-item .info {
@@ -963,13 +967,7 @@ header .container {
 .testimonials-item p {
     margin-top: 20px;
     color: hsl(0, 2%, 78%);
-
     display: block;
-    /* or inline-block */
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: hidden;
-    max-height: 7.6em;
     line-height: 1.8em;
 }
 
@@ -1086,7 +1084,9 @@ header .container {
         gap: 20px;
     }
 
-    .label{}
+    .custom-mounts{
+        padding: 10px;
+    }
 
     .notebooks .photomount-details>p {
         display: none;
@@ -1134,6 +1134,11 @@ header .container {
 
     .accord {
         transform: translate(3%, 0%);
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
     }
 
 }
