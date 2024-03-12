@@ -66,7 +66,7 @@
 
 .custom-mount-details h3 {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Linotte;
 }
 
@@ -101,14 +101,14 @@
 
 .photomount-details h3 {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Linotte;
 }
 
 .photomount-details>p {
     font-family: Linotte;
     color: #a0a0a0;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 20px;
     font-weight: 400;
 }
@@ -123,7 +123,6 @@
     border: 2px solid rgba(68, 68, 68, 0.3);
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
-.first{}
 #progress {
     background-color: #03cc65;
     position: fixed;
@@ -193,7 +192,6 @@ html {
     --lightOne: #dddddd;
     --lightTwo: #aaa;
 }
-.information{}
 
 .stop-scrolling {
     height: 100%;
@@ -283,6 +281,8 @@ header .container {
     margin-left: 2.5rem;
     display: inline-block;
     transition: 0.3s;
+    font-family: 18px;
+    font-family: linotte;
 }
 
 .links a:hover {
@@ -1142,7 +1142,7 @@ header .container {
 
     .container {
         max-width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
 
 }
