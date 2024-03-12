@@ -1321,13 +1321,17 @@ header .container {
 
 .first {
     padding: 10px;
+    font-family: Linotte;
     color: #5a2484;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .second {
     padding-left: 10px;
-    color: #041562;
+    color: #ff0000;
+    font-family: linotte;
+    font-size: 18px;
 }
 
 #reviews-data .card-body p {

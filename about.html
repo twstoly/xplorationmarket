@@ -12,10 +12,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Swipper Css -->
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/repeated_style.css">
   <script src="https://kit.fontawesome.com/f95ee0079f.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/nav_progress.js"></script>
+
 </head>
 
 <body>
@@ -27,34 +29,31 @@
     <span id="progress-value"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
   </div>
 
-
   <div class="big-wrapper light">
-    <img src="src/shape.webp" class="shape" alt="">
     <header>
       <div class="container">
         <div class="logo">
           <picture>
-            <source class="person" srcset="src/logo_large.webp" media="(min-width:767px)" />
-            <source class="person" srcset="src/logo_medium.webp" media="(min-width:576px)" />
-            <source class="person" srcset="src/logo_small.webp" media="(min-width:410px)" />
-            <source class="person" srcset="src/logo_small.webp" media="(max-width:410px)" />
+            <source srcset="src/logo_large.webp" media="(min-width:767px)" />
+            <source srcset="src/logo_medium.webp" media="(min-width:576px)" />
+            <source srcset="src/logo_small.webp" media="(min-width:410px)" />
+            <source srcset="src/logo_small.webp" media="(max-width:410px)" />
 
-            <img src="src/logo.webp" width="40px" height="40px" loading="lazy" alt="logo" class="person">
+            <img src="src/logo.webp" width="40px" height="40px" loading="lazy" alt="logo">
           </picture>
           <h3>Xploration Market.</h3>
         </div>
         <div class="links">
           <ul class="menu_item">
-            <li><a href="index">Home</a></li>
-            <li><a href="index#categories">Categories</a></li>
-            <li><a href="index#pricing">Pricing</a></li>
-            <li><a href="index#testimonials">Testimonials</a></li>
-            <li><a href="about" class="active">About Us</a></li>
-            <li><a href="contact" class="btn">Contact Us</a></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="home.#categories">Categories</a></li>
+            <li><a href="home.our-prices">Pricing</a></li>
+            <li><a href="home.#testimonials">Testimonials</a></li>
+            <li><a href="about " class="active">About Us</a></li>
+            <li><a href="contact/" class="btn">Contact Us</a></li>
           </ul>
         </div>
         <div class="overlay"></div>
-
         <div class="hamburger-menu">
           <div class="bar"></div>
         </div>
@@ -70,46 +69,52 @@
     <section class="about">
       <div class="about-contain">
         <div class="aboutInfo">
-          <p>Founded in 2022, xplorationmarket is a trusted Photo Mounts online shopping brand for Kenyans who
-            need the best and affordable photo mounts every moment. <br> <br><b>Born From A Desire To
-              Provide Better Service </b><br> <br>Mwangale didn't have a great experience shopping quality
-            photo mounts products for his family. Using other the so called "big" offline photo mounting
+          <p class="aboutText">Founded in 2022, xplorationmarket is a trusted Photo Mounts online shopping brand for Kenyans who
+            need the best and affordable photo mounts every moment.</p>
+          <p class="aboutText"><b>Born From A Desire To
+              Provide Better Service </b></p>
+          <p class="aboutText">Mwangale didn't have a great experience shopping quality
+            photo mounts products for his family. </p>
+          <p class="aboutText">Using other the so called "big"
+            offline photo mounting
             services left him wanting more in terms of the service he received (or lack thereof), varieties
             of different photos to be mounted and the quality of the content that was being delivered.</p>
-
           <picture>
             <!-- <source srcset="src/Sample2_large.webp" media="(min-width:767px)" />
             <source srcset="src/Sample2_medium.webp" media="(min-width:576px)" />
             <source srcset="src/sample2_small.webp" media="(min-width:410px)" />
             <source srcset="src/sample2_small.webp" media="(max-width:410px)" /> -->
-            <img src="src/Sample2.webp" alt="Image of photo mount"> 
-                      </picture>
-          <p>These experiences with other businesses drove him to create xplorationmarket Application, to
+            <img class="aboutPerson" src="src/Sample2.webp" alt="Image of photo mount">
+          </picture>
+          <br>
+          <p class="aboutText">These experiences with other businesses drove him to create xplorationmarket Application, to
             shake up and make online shopping industry an easier, more enjoyable process and with a wide
             range of beautiful photos that can be mounted within a very short time.</p>
         </div>
         <hr class="horizontal-line">
         <div class="aboutForm">
-            <picture>
-              <source class="person" srcset="src/1large.webp" media="(min-width:767px)" />
-              <source class="person" srcset="src/1medium.webp" media="(min-width:576px)" />
-              <source class="person" srcset="src/1small.webp" media="(min-width:410px)" />
-              <source class="person" srcset="src/1small.webp" media="(max-width:410px)" />
+          <picture>
+            <source class="person" srcset="src/1large.webp" media="(min-width:767px)" />
+            <source class="person" srcset="src/1medium.webp" media="(min-width:576px)" />
+            <source class="person" srcset="src/1small.webp" media="(min-width:410px)" />
+            <source class="person" srcset="src/1small.webp" media="(max-width:410px)" />
 
-              <img src="src/1.webp" width="40px" height="40px" loading="lazy" alt="logo" class="person">
-            </picture>
-          <p>With a lot of people breaking the bank to find trending photo mounts that can be customized to
+            <img src="src/1.webp" loading="lazy" alt="logo" class="person aboutPerson">
+          </picture>
+          <p class="aboutText">With a lot of people breaking the bank to find trending photo mounts that can be customized to
             make their hom,es feel more lively and more appealing… in Other words photo mounts that actually
-            sooth their sense of taste and style, we saw the need to provide an online shopping platform
+            sooth their sense of taste and style.
+          </p><br>
+          <p class="aboutText">We saw the need to provide an online shopping platform
             containing top notch and a wide range of photos that can be customized to provide Kenyans not
-            only the best trending and soothing mounts in the market but also satisfaction in quality. <br>
-            <br>Trusted by more than 20,000 Kenyans as their go to photo mounting store, our photo mounts
-            have been designed for ultimate longevity to assure you get the best in the market. <br>We ship
+            only the best trending and soothing mounts in the market but also satisfaction in quality. </p>
+          <p class="aboutText">Trusted by more than 20,000 Kenyans as their go to photo mounting store, our photo mounts
+            have been designed for ultimate longevity to assure you get the best in the market.</p>
+          <p class="aboutText">We ship
             all our products to all our customers across Kenya with Nairobi residents getting same day
-            delivery once an order is placed and confirmed. <br> <br>xplorationmarket ~ We are almost
-            there..
-          </p>
-
+            delivery once an order is placed and confirmed.</p>
+          <p class="aboutText"><b>xplorationmarket ~ We are almost
+              there..</b></p>
         </div>
       </div>
     </section>
@@ -159,7 +164,7 @@
                 class="fa-brands fa-tiktok"></i> </a> </div>
         </div>
         <div class="footer-col">
-          <h3>Xploration Market App</h3> <!-- <p>Get Access to Exclusive offers</p> -->
+          <h3>Xploration Market App</h3> <!-- <p class="aboutText">Get Access to Exclusive offers</p> -->
           <div class="store-icons">
             <div class="left-store"> <a
                 href="https://play.google.com/store/apps/details?id=com.twsts.market&pcampaignid=web_share"
@@ -169,15 +174,19 @@
           </div>
         </div>
       </div>
-      <hr><br>
+      <hr>
       <div class="footer-row">
-        <p>© Xploration Market 2024 </p>
+        <div class="footer-col">
+          <p>© Xploration Market 2024 </p>
+        </div>
       </div>
     </div>
   </footer>
   </div>
 </body>
 
-<script type="text/javascript" src="js/nav_progress.js"></script>
+<script type="module" src="index.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
 
 </html>

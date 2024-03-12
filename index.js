@@ -18,7 +18,12 @@ ScrollReveal().reveal('.accord-list', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.form_item', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.information', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.information', { origin: "left", interval: 200 })
-ScrollReveal().reveal('.footer-col', { origin: "left", interval: 200 })
+ScrollReveal().reveal('.footer-col', { origin: "bottom", interval: 200 })
+
+// About us Page
+
+ScrollReveal().reveal('.aboutText', { origin: "left", interval: 200 })
+ScrollReveal().reveal('.aboutPerson', { origin: "left", interval: 200 })
 
 var scrollPos = 0;
 var isdown = true;

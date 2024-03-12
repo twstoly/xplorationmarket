@@ -1,16 +1,22 @@
 .big-wrapper {
-    padding: 1.7rem 0 0 0;
+    background-color: #1c1b29;
 }
 
+.person {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translate(15%, 25px);
+}
 .about {
     position: relative;
     /* min-height: 100vh; */
     padding: 50px 100px;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #1c1b29;
 }
 
 .about-contain {
@@ -18,8 +24,8 @@
     justify-content: center;
     width: 100%;
     display: flex;
-    gap: 50px;
-    margin-top: 10px;
+    gap: 30px;
+    /* margin-top: 10px; */
 }
 
 .about-contain .aboutInfo {
@@ -30,7 +36,14 @@
 
 .about-contain .aboutInfo p,
 .about-contain .aboutForm p {
-    color: silver;
+    color: #1c1b29;
+    font-family: linotte;
+    font-size: 18px;
+    text-align: justify;
+}
+.about-contain .aboutInfo p b, .about-contain .aboutForm p b{
+    color: rgb(66, 66, 66);
+    font-size: 24px;
 }
 
 .about-contain .aboutForm {
@@ -40,7 +53,7 @@
 
 @media (min-width:991px) {
     .horizontal-line {
-        border: 1px solid white;
+        border: 1px solid grey;
         height: 130vh;
         width: 2px;
     }
@@ -49,7 +62,7 @@
 /* about Form rsponsiveness */
 @media (max-width:991px) {
     .about {
-        padding: 50px;
+        padding: 20px;
     }
 
     .about-contain {
@@ -67,6 +80,7 @@
     }
 
     .horizonal-line {
+        color: grey;
         width: 100%;
         height: 2px;
     }
@@ -81,3 +95,4 @@
         width: 100%;
     }
 }
+
