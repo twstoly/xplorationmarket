@@ -47,6 +47,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px 10px;
 }
 
 .creator h3 {
@@ -75,6 +76,7 @@
 .creator-contain .creatorInfo p,
 .creator-contain .creatorForm p {
     color: rgb(0, 0, 0);
+    text-align: justify;
 }
 
 .creator-contain .creatorForm {
@@ -84,13 +86,13 @@
 
 .creator-contain .creatorForm h3,
 .creator-contain .creatorInfo h3 {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .creator-contain .creatorForm ul li,
 .creator-contain .creatorInfo ul li {
     list-style: disc;
-    padding: 10px 0;
+    padding: 5px 0;
     list-style-position: inside;
     font-family: linotte;
     color: rgb(91, 90, 90);
@@ -111,7 +113,7 @@
 /* creator Form rsponsiveness */
 @media (max-width:991px) {
     .creator {
-        /* padding: 10px; */
+        padding: 10px;
     }
 
     .container {

@@ -97,12 +97,10 @@ a {
 
 .big-wrapper {
     position: relative;
-    padding: 1.7rem 0 2rem;
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .container {
@@ -273,8 +271,6 @@ header .container {
     font-family: Feather;
     text-transform: capitalize;
     color: #1c1b29;
-    line-height: 18px;
-    padding-top: 30px;
     text-align: left;
 }
 
@@ -466,7 +462,7 @@ header .container {
 
 @media screen and (max-width: 470px) {
     .container {
-        padding: 0 1.5rem;
+        padding: 0 10px;
     }
 
     .big-title {
@@ -505,6 +501,7 @@ ul {
 }
 
 .footer-col h3 {
+    font-family: Linotte;
     color: white;
     text-transform: capitalize;
     font-size: 18px;
@@ -515,6 +512,7 @@ ul {
 
 .footer-col p {
     color: silver;
+    font-family: Linotte;
 }
 
 .footer-col h3::before {
@@ -536,6 +534,7 @@ ul {
     text-decoration: none;
     color: white;
     margin-top: 20px;
+    font-family: Linotte;
     text-transform: capitalize;
     transition: 0.3s ease;
     display: block;
@@ -592,16 +591,11 @@ ul {
     color: #ff0000;
 }
 
-
-
-
-
-
 /* Resposive Website */
 @media(max-width:767px) {
     .footer-col {
         width: 50%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .custom-image-col {
@@ -610,13 +604,24 @@ ul {
 }
 
 @media(max-width:576px) {
+    
+    .footer .container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .footer-col {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .custom-image-col {
         width: 100%;
         padding: 0 40px;
+    }
+
+    .footer-col:last-child{
+        margin-bottom: 0;
     }
 }

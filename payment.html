@@ -25,7 +25,7 @@
   <div class="elfsight-app-3d74d477-e136-4b32-97fb-f7cb464e1c97" data-elfsight-app-lazy></div>
   <!-- Arrow Btn -->
   <div id="progress">
-    <span id="progress-value">&#x1F815;</span>
+    <span id="progress-value"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
   </div>
 
   <div class="big-wrapper light">
@@ -33,7 +33,15 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="src/logo.webp alt="" srcset="">
+        
+            <picture>
+              <source class="person" srcset="src/logo_large.webp" media="(min-width:767px)" />
+              <source class="person" srcset="src/logo_medium.webp" media="(min-width:576px)" />
+              <source class="person" srcset="src/logo_small.webp" media="(min-width:410px)" />
+              <source class="person" srcset="src/logo_small.webp" media="(max-width:410px)" />
+
+              <img src="src/logo.webp" width="40px" height="40px" loading="lazy" alt="logo" class="person">
+            </picture>
           <h3>Xploration Market.</h3>
         </div>
         <div class="links">
@@ -59,23 +67,23 @@
         <div class="left">
           <div class="big-title">
             <ol type="1">
-              <h3>Payment methods accepted include:</h3>
-              <li>Mobile payments</li>
-              <li>Bank transfers</li>
-              <li>Cash payments upon delivery, only within Nairobi (CBD)</li>
+              <h3 class="paymentHeader">Payment methods accepted include:</h3>
+              <li class="paymentList">Mobile payments</li>
+              <li class="paymentList">Bank transfers</li>
+              <li class="paymentList">Cash payments upon delivery, only within Nairobi (CBD)</li>
             </ol>
             <ol type="1">
-              <h3>Terms And Conditions:</h3>
-              <li>Payment is to be done upon checkout</li>
-              <li>Cash payments are only accepted for people living within Nairobi and the CBD</li>
-              <li>NO REFUNDS. Once a purchase has been made, there will be no refunds and returns unless
+              <h3 class="paymentHeader">Terms And Conditions:</h3>
+              <li class="paymentList">Payment is to be done upon checkout</li>
+              <li class="paymentList">Cash payments are only accepted for people living within Nairobi and the CBD</li>
+              <li class="paymentList">NO REFUNDS. Once a purchase has been made, there will be no refunds and returns unless
                 the products are not in the perfect condition upon delivery</li>
             </ol>
           </div>
         </div>
 
         <div class="right">
-          <img src="src/payment.webp"person image" class="person">
+          <img src="src/payment.webp"person image" class="person paymentPerson">
         </div>
       </div>
     </div>
@@ -142,72 +150,15 @@
       </div>
       <hr><br>
       <div class="footer-row">
-        <p>© Xploration Market 2024 </p>
+      <div class="footer-col">
+        <p>© Xploration Market 2024 </p></div>
       </div>
     </div>
   </footer>
   </div>
 </body>
 
-<script type="text/javascript">
-  // Scroll To Top Progressbar
-  let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-
-    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-
-
-    if (pos > 100) {
-      scrollProgress.style.display = "flex";
-    } else {
-      scrollProgress.style.display = "none";
-    }
-
-    scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-    scrollProgress.addEventListener("click", () => {
-      document.documentElement.scrollTop = 0;
-    });
-  }
-
-  window.onscroll = calcScrollValue;
-  window.onload = calcScrollValue;
-
-  var toggle_btn;
-  var big_wrapper;
-  var menu_item;
-  var hamburger_menu;
-
-  function declare() {
-    toggle_btn = document.querySelector(".toggle-btn");
-    big_wrapper = document.querySelector(".big-wrapper");
-    menu_item = document.querySelector(".menu_item");
-    hamburger_menu = document.querySelector(".hamburger-menu");
-  }
-
-  const main = document.querySelector("main");
-
-  declare();
-
-  function toggleAnimation() {
-    document.body.classList.add("stop-scrolling");
-    events();
-  }
-
-  function events() {
-    toggle_btn.addEventListener("click", toggleAnimation);
-    hamburger_menu.addEventListener("click", () => {
-      big_wrapper.classList.toggle("active");
-    });
-    menu_item.addEventListener("click", () => {
-      big_wrapper.classList.remove("active");
-    });
-  }
-
-  events();
-</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script type="module" src="index.js"></script>
 
 </html>

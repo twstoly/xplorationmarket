@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Prices - Xploration Market</title>
-    <link rel="shortcut icon" href="/src/logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="src/logo.webp" type="image/x-icon">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -26,7 +26,7 @@
     <div class="elfsight-app-3d74d477-e136-4b32-97fb-f7cb464e1c97" data-elfsight-app-lazy></div>
     <!-- Arrow Btn -->
     <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
+    <span id="progress-value"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
     </div>
 
     <div class="big-wrapper light">
@@ -81,7 +81,7 @@
                     <label for="p1" class="notebook__form__label">
                         <div class="notebook__form__label-item">
                             <div class="notebook__form__info">
-                                <img src="src/notebook1.png" alt="">
+                                <img src="src/notebook1.webp" alt="">
                                 <h1 class="notebook__form__info-title">Light Brown A5 Notebook</h1>
                                 <p class="notebook__form__info-desc">
                                     Everyone needs a notebook that they can call their own, and this is it.
@@ -100,7 +100,7 @@
                     <label for="p1" class="notebook__form__label">
                         <div class="notebook__form__label-item">
                             <div class="notebook__form__info">
-                                <img src="src/notebook4.png" alt="">
+                                <img src="src/notebook4.webp" alt="">
                                 <h1 class="notebook__form__info-title">Dark Brown A5 Notebook</h1>
                                 <p class="notebook__form__info-desc">
                                     If you're looking for the perfect gift, don't scroll past this one.
@@ -119,7 +119,7 @@
                     <label for="p1" class="notebook__form__label">
                         <div class="notebook__form__label-item">
                             <div class="notebook__form__info">
-                                <img src="src/notebook3.png" alt="">
+                                <img src="src/notebook3.webp" alt="">
                                 <h1 class="notebook__form__info-title">Silver Brown A5 Notebook</h1>
                                 <p class="notebook__form__info-desc">
                                     Everyone needs a notebook that they can call their own, and this is it.
@@ -333,21 +333,6 @@
                         </div>
                     </label>
                 </div>
-
-                <!-- Form--Item -->
-                <!-- <div class="form_item col-12  col-sm-6 col-md-4" data-tilt="">
-                    <input type="radio" id="p1" checked name="price" class="form__input">
-                    <label for="p1" class="form__label">
-                        <div class="form__label-item">
-                            <div class="form__info">
-                                <h1 class="form__info-title">80 Photos</h1>
-                                <p class="form__info-desc">Dimentions 12 X 16 inch
-                                
-                                <h4 class="form__price">Ksh 25,000 Extra Pages ksh 1,000</h4>
-                            </div>
-                        </div>
-                    </label>
-                </div> -->
             </div>
         </form>
         <br>
@@ -355,33 +340,31 @@
 
         <!-- Shipping and orders information -->
         <div class="row shipping-information">
-            <div class="card border-0 information col-12  col-sm-6 col-md-4">
-                <div class="shipping">
-                    <dl>
-                        <dd class="first">Free Countrywide Shipping</dd>
-                        <dd class="second">For Orders Above Ksh 5,000</dd>
-                    </dl>
-                </div>
-            </div>
-
-            <div class="card border-0 information col-12  col-sm-6 col-md-4">
-                <div class="support">
-                    <dl>
-                        <dd class="first">24/7 Live Support</dd>
-                        <dd class="second">Get Help When You Need</dd>
-                    </dl>
-                </div>
-            </div>
-
-            <div class="card border-0 information col-12  col-sm-6 col-md-4">
-                <div class="checkout">
-                    <dl>
-                        <dd class="first">100% Secure Checkout</dd>
-                        <dd class="second">PayPal / MasterCard / Visa /MPESA</dd>
-                    </dl>
-                </div>
-            </div>
+        <div class="card border-0 information col-12 hidden col-sm-6 col-md-4">
+          <div class="shipping">
+            <ul class="support">
+              <li class="first">Free Countrywide Shipping</dd>
+              <li class="second">For Orders Above Ksh 5,000</li>
+            </ul>
+          </div>
         </div>
+        <div class="card border-0 information col-12 hidden col-sm-6 col-md-4">
+          <div class="support">
+            <ul class="support">
+              <li class="first">24/7 Live Support</li>
+              <li class="second">Get Help When You Need</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card border-0 information col-12 hidden col-sm-6 col-md-4">
+          <div class="checkout">
+            <ul class="support">
+              <li class="first">100% Secure Checkout</li>
+              <li class="second">PayPal / MasterCard / Visa /MPESA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer" id="contact">
@@ -438,72 +421,16 @@
             </div>
             <hr><br>
             <div class="footer-row">
-                <p>© Xploration Market 2024 </p>
+                <div class="footer-col">
+                    <p>© Xploration Market 2024 </p>
+                </div>
             </div>
         </div>
     </footer>
     </div>
 </body>
 
-<script type="text/javascript">
-    // Scroll To Top Progressbar
-    let calcScrollValue = () => {
-        let scrollProgress = document.getElementById("progress");
-        let progressValue = document.getElementById("progress-value");
-        let pos = document.documentElement.scrollTop;
-
-        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-        let scrollValue = Math.round((pos * 100) / calcHeight);
-
-
-        if (pos > 100) {
-            scrollProgress.style.display = "flex";
-        } else {
-            scrollProgress.style.display = "none";
-        }
-
-        scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-        scrollProgress.addEventListener("click", () => {
-            document.documentElement.scrollTop = 0;
-        });
-    }
-
-    window.onscroll = calcScrollValue;
-    window.onload = calcScrollValue;
-
-    var toggle_btn;
-    var big_wrapper;
-    var menu_item;
-    var hamburger_menu;
-
-    function declare() {
-        toggle_btn = document.querySelector(".toggle-btn");
-        big_wrapper = document.querySelector(".big-wrapper");
-        menu_item = document.querySelector(".menu_item");
-        hamburger_menu = document.querySelector(".hamburger-menu");
-    }
-
-    const main = document.querySelector("main");
-
-    declare();
-
-    function toggleAnimation() {
-        document.body.classList.add("stop-scrolling");
-        events();
-    }
-
-    function events() {
-        toggle_btn.addEventListener("click", toggleAnimation);
-        hamburger_menu.addEventListener("click", () => {
-            big_wrapper.classList.toggle("active");
-        });
-        menu_item.addEventListener("click", () => {
-            big_wrapper.classList.remove("active");
-        });
-    }
-
-    events();
-</script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script type="module" src="index.js"></script>
 
 </html>

@@ -21,9 +21,18 @@ ScrollReveal().reveal('.information', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.footer-col', { origin: "bottom", interval: 200 })
 
 // About us Page
-
 ScrollReveal().reveal('.aboutText', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.aboutPerson', { origin: "left", interval: 200 })
+// Content Page
+ScrollReveal().reveal('.contentHeading', { origin: "bottom", interval: 200 })
+ScrollReveal().reveal('.contentText', { origin: "bottom", interval: 200 })
+// Payment Page
+ScrollReveal().reveal('.paymentHeader', { origin: "bottom", interval: 200 })
+ScrollReveal().reveal('.paymentList', { origin: "bottom", interval: 200 })
+ScrollReveal().reveal('.paymentPerson', { origin: "bottom", interval: 200 })
+// Cookies Page
+ScrollReveal().reveal('.cookiesHeader', { origin: "bottom", interval: 200 })
+ScrollReveal().reveal('.cookiesContent', { origin: "bottom", interval: 200 })
 
 var scrollPos = 0;
 var isdown = true;

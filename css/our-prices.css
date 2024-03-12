@@ -140,6 +140,28 @@ dd:before {
 .form__input:checked~.form__label .form__img {
     opacity: 1;
 }
+/* Shipping Card Information */
+
+.shipping-information .card {
+    margin-top: 10px;
+    border: 2px solid rgba(68, 68, 68, 0.3);
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.first {
+    padding: 10px;
+    font-family: Linotte;
+    color: #5a2484;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.second {
+    padding-left: 10px;
+    color: #ff0000;
+    font-family: linotte;
+    font-size: 18px;
+}
+
 
 /* Notebook Customizations */
 .notebook__form__label {
