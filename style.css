@@ -281,7 +281,7 @@ header .container {
     margin-left: 2.5rem;
     display: inline-block;
     transition: 0.3s;
-    font: 20px;
+    font-size: 18px;
     font-family: linotte;
 }
 
