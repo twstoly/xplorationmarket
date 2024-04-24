@@ -47,12 +47,12 @@
 
 .custom-mounts .card {
     /* 291b1b */
-    background-color: #1b1c29;
+    /* background-color: #1b1c29; */
+    background-color: #ffffff;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 .custom-mount-container {
-    position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
@@ -65,13 +65,14 @@
 }
 
 .custom-mount-details h3 {
-    color: white;
-    font-size: 16px;
+    color: #0015ff;
+    font-size: 18px;
     font-family: Linotte;
 }
-
+.photomounts{}
 .custom-mount-details>p {
-    color: #a0a0a0;
+    display: none;
+    color: #ff0000;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
@@ -85,14 +86,18 @@
     grid-gap: 20px;
 }
 
-.photomounts .card {
+/* .photomounts .card {
     background-color: #1c1b29;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
-}
+} */
 
 .photomount-container {
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border: none;
+}
+
+.photomount-container img {
+    border-radius: 10px;
 }
 
 .photomount-details {
@@ -100,7 +105,7 @@
 }
 
 .photomount-details h3 {
-    color: white;
+    color: blue;
     font-size: 18px;
     font-family: Linotte;
 }
@@ -108,7 +113,7 @@
 .photomount-details>p {
     font-family: Linotte;
     color: #a0a0a0;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 400;
 }
@@ -123,6 +128,7 @@
     border: 2px solid rgba(68, 68, 68, 0.3);
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
+
 #progress {
     background-color: #03cc65;
     position: fixed;
@@ -304,9 +310,10 @@ header .container {
     display: inline-block;
     padding: 0.9rem 1.9rem;
     margin: 5px;
+    font-family: linotte;
     color: #000000 !important;
     background-color: var(--mainColor);
-    border-radius: 16px;
+    border-radius: 20px;
     text-transform: capitalize;
     transition: 0.3s;
 }
@@ -395,17 +402,25 @@ header .container {
 .big-title h3 {
     font-family: Feather;
     text-transform: capitalize;
-    color: hsl(84, 100%, 59%);
+    color: lawngreen;
     font-weight: 300;
+    font-size: 24px;
     line-height: 1.2;
     text-align: center;
 }
 
 .text {
     color: var(--lightOne);
-    font-size: 24px;
+    font-size: 20px;
     margin: 1.9rem 0 2.5rem;
-    line-height: 2.3;
+    line-height: 3;
+    font-family: Linotte;
+}
+
+.sub_heading {
+    color: rgb(77, 76, 76);
+    font-size: 20px;
+    line-height: 2.5;
     font-family: Linotte;
 }
 
@@ -998,7 +1013,7 @@ header .container {
     font-size: 28px;
     font-weight: 600;
     text-transform: capitalize;
-    color: hsl(0, 0%, 0%);
+    color: red;
     line-height: 1.2;
     text-align: center;
 }
