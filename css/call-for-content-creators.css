@@ -9,6 +9,9 @@
     src: url('../fonts/Linotte\ Regular.otf');
     font-display: swap;
 }
+.content_area{
+    background-color: white;
+}
 
 /* Progress Icon */
 

@@ -35,6 +35,87 @@
     font-family: 'Poppins' sans-serif;
 }
 
+/* Slider Frames */
+.slider-frames {
+    overflow: hidden;
+    height: auto;
+    width: 600px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+/* Slide Animations */
+@keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: 600px;
+    }
+
+    30% {
+        left: 600px;
+    }
+
+    40% {
+        left: 1200px;
+    }
+
+    50% {
+        left: 1200px;
+    }
+
+    60% {
+        left: 600px;
+    }
+
+    70% {
+        left: 600px;
+    }
+
+    80% {
+        left: 0px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+/* .right{
+    overflow: hidden;
+} */
+.slide-images {
+    width: 4800px;
+    height: auto;
+    margin: 0 0 0 -1200px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.img-container {
+    height: 800px;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+.img-container img {
+    width: 600px;
+}
 
 /* Most Customized Photo Mounts section */
 .custom-mounts {
@@ -48,19 +129,24 @@
 .custom-mounts .card {
     /* 291b1b */
     /* background-color: #1b1c29; */
-    background-color: #ffffff;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
+.first {}
+
 .custom-mount-container {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
 
 .custom-mount-container img {
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .custom-mount-details {
+    display: none;
     padding: 10px;
 }
 
@@ -69,7 +155,7 @@
     font-size: 18px;
     font-family: Linotte;
 }
-.photomounts{}
+
 .custom-mount-details>p {
     display: none;
     color: #ff0000;
@@ -86,10 +172,11 @@
     grid-gap: 20px;
 }
 
-/* .photomounts .card {
-    background-color: #1c1b29;
+.photomounts .card {
+    background-color: #ffffff;
+    border: none;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
-} */
+}
 
 .photomount-container {
     position: relative;
@@ -102,6 +189,8 @@
 
 .photomount-details {
     padding: 10px;
+    display: none;
+    border: none;
 }
 
 .photomount-details h3 {
@@ -111,8 +200,7 @@
 }
 
 .photomount-details>p {
-    font-family: Linotte;
-    color: #a0a0a0;
+    color: #001a2e;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -625,6 +713,15 @@ header .container {
     .showcase-area .btn {
         font-size: 0.8rem;
     }
+
+    .sub_heading {
+        line-height: 2;
+        font-size: 17px;
+    }
+
+    .heading {
+        font-size: 8px;
+    }
 }
 
 .categories-title p {
@@ -830,28 +927,29 @@ header .container {
 }
 
 .form__info-title {
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 5px;
     font-family: Linotte;
 }
 
 .form__info_category-title {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 5px;
     font-family: Linotte;
-    color: #1c1b29;
+    color: blue;
 }
 
 .form__info-desc {
     font-size: 18px;
-    color: #3daff5;
-    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.02cm;
+    color: rgb(255, 0, 0);
+    font-family: linotte;
 }
 
 .form__price {
-    font-size: 20px;
+    font-size: 18px;
     font-family: Linotte;
-    color: #041562;
+    color: blue;
 }
 
 .form__input:checked~.form__label .form__img {
@@ -895,7 +993,7 @@ header .container {
 .accord .accord-list label {
     align-items: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     color: #5a2484;
     font-family: Linotte;
@@ -914,11 +1012,11 @@ header .container {
 
 .accord .content {
     font-family: Linotte;
-    font-weight: 100;
     column-rule-color: rgb(167, 164, 164);
     padding: 0 10px;
+    color: rgb(45, 44, 44);
     line-height: 26px;
-    font-size: 18px;
+    font-size: 17px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
@@ -961,22 +1059,26 @@ header .container {
     height: auto;
 }
 
+.testimonials-item .quotes {
+    color: red;
+    font-size: 30px;
+}
+
 .testimonials-item .info {
     display: flex;
     align-items: center;
 }
 
 .testimonials-item img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 20px;
-    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .testimonials-item .name {
     font-family: Linotte;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
@@ -1010,7 +1112,7 @@ header .container {
 
 .heading {
     font-family: Linotte;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     text-transform: capitalize;
     color: red;
@@ -1189,7 +1291,7 @@ header .container {
     padding: 10px;
     font-family: Linotte;
     color: #5a2484;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -1197,7 +1299,7 @@ header .container {
     padding-left: 10px;
     color: #ff0000;
     font-family: linotte;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #reviews-data .card-body p {
@@ -1237,4 +1339,16 @@ header .container {
 
 .form .form__item:nth-child(8) {
     transition-delay: 1400ms;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+.fa-instagram {
+    color: rgb(245, 50, 83);
+}
+
+.fa-tiktok {
+    color: #FE2C55;
 }

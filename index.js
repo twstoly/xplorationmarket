@@ -9,6 +9,7 @@ ScrollReveal({
 ScrollReveal().reveal('.text', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.hook', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.mounted-photos', { origin: "left", interval: 200 })
+ScrollReveal().reveal('.sub_heading', { origin: "bottom", interval: 200 })
 ScrollReveal().reveal('.custom-mounts', { origin: "bottom", interval: 200 })
 ScrollReveal().reveal('.samples', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.notebooks', { origin: "bottom", interval: 200 })
@@ -20,7 +21,7 @@ ScrollReveal().reveal('.swiper', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.accord-list', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.form_item', { origin: "left", interval: 200 })
 ScrollReveal().reveal('.information', { origin: "left", interval: 200 })
-ScrollReveal().reveal('.footer-col', { origin: "bottom", interval: 200 })
+// ScrollReveal().reveal('.footer-col', { origin: "bottom", interval: 200 })
 
 // About us Page
 ScrollReveal().reveal('.aboutText', { origin: "left", interval: 200 })
@@ -114,7 +115,7 @@ var swiper = new Swiper(".js-testimonials-slider", {
   },
   breakpoints: {
     767: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     }
   }
 });

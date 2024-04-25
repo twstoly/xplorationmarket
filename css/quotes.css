@@ -34,6 +34,10 @@
     font-family: 'Poppins' sans-serif;
 }
 
+.content_area{
+    background-color: white;
+    padding-top: 40px;
+}
 
 .heading {
     font-family: Linotte;
@@ -56,17 +60,16 @@
 
 .custom-mounts .card {
     /* 291b1b */
-    background-color: #1b1c29;
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 .custom-mount-container {
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .custom-mount-container img {
     object-fit: cover;
+    width: 100%;
 }
 
 .custom-mount-details {

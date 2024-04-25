@@ -149,7 +149,7 @@ header .container {
 
 .logo h3 {
     color: white;
-    font-size: 1.55rem;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
 }
@@ -268,6 +268,7 @@ header .container {
 }
 
 .big-title h3 {
+    font-size: 20px;
     font-family: Feather;
     text-transform: capitalize;
     color: #1c1b29;
