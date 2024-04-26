@@ -18,6 +18,25 @@
     <link rel="stylesheet" href="css/privacy_cookies.css">
     <link rel="stylesheet" href="css/repeated_style.css">
     <script src="https://kit.fontawesome.com/f95ee0079f.js" crossorigin="anonymous"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '952080983304958');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=952080983304958&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -26,7 +45,7 @@
     <div class="elfsight-app-3d74d477-e136-4b32-97fb-f7cb464e1c97" data-elfsight-app-lazy></div>
     <!-- Arrow Btn -->
     <div id="progress">
-    <span id="progress-value"><i class="fa-solid fa-circle-up"></i></span>
+        <span id="progress-value"><i class="fa-solid fa-circle-up"></i></span>
     </div>
 
     <div class="big-wrapper light">
