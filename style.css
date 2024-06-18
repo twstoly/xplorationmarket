@@ -35,6 +35,27 @@
     font-family: 'Poppins' sans-serif;
 }
 
+.contactus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.start, .center{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.center{
+    font-family: linotte;
+    font-weight: 50;
+    letter-spacing: 0.05;
+}
+
+.contactus {
+    padding: 80px;
+}
+
 /* Slider Frames */
 .slider-frames {
     overflow: hidden;
@@ -134,8 +155,6 @@
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
-.first {}
-
 .custom-mount-container {
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 }
@@ -162,6 +181,9 @@
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
+}
+.hook{
+    color: #d6ff42;
 }
 
 /* Photo Mounts section */
