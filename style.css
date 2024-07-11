@@ -86,7 +86,15 @@ dd:before {
 .btn_stretch{
     display: flex;
     justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
+.btn_grow{
+    flex-grow: 1;
+}
+.text{}
+
 .heading {
     font-family: Linotte;
     font-size: 20px;
@@ -541,7 +549,7 @@ dd:before {
 #progress {
     background-color: #03cc65;
     position: fixed;
-    bottom: 100px;
+    bottom: 170px;
     right: 20px;
     height: 65px;
     width: 65px;
@@ -564,6 +572,22 @@ dd:before {
     place-items: center;
     font-size: 35px;
     color: #001a2e;
+}
+
+
+.phoneanim{
+    position: fixed;
+    bottom: 80px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    z-index: 99;
+    /* display: none; */
+    justify-content: center;
+    place-items: center;
+    border-radius: 50%;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
 }
 
 
@@ -890,8 +914,9 @@ header .container {
     margin: 1.9rem 0 2.5rem;
     line-height: 3;
     font-family: Linotte;
+    text-align:justify;
 }
-
+.progress-value{}
 .sub_heading {
     color: rgb(77, 76, 76);
     font-size: 18px;
