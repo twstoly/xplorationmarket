@@ -34,7 +34,9 @@
     box-sizing: border-box;
     font-family: 'Poppins' sans-serif;
 }
-
+.main_body{
+    width: 100%;
+}
 .white {
     color: white;
 }
@@ -564,8 +566,8 @@ dd:before {
 
 #progress-value {
     display: block;
-    height: calc(100% - 10px);
-    width: calc(100% - 10px);
+    height: calc(100% - 5px);
+    width: calc(100% - 5px);
     background-color: #ffffff;
     border-radius: 50%;
     display: grid;
@@ -573,6 +575,8 @@ dd:before {
     font-size: 35px;
     color: #001a2e;
 }
+
+#custom_btn_orange{}
 
 
 .phoneanim{
@@ -594,6 +598,7 @@ dd:before {
 html {
     scroll-behavior: smooth;
 }
+.text{}
 
 .trending-products-card .card .card-wrapper .profile {
     width: 100%;
@@ -743,6 +748,7 @@ header .container {
     display: inline-block;
     padding: 0.9rem 1.9rem;
     margin: 5px;
+    text-align: center;
     font-family: linotte;
     color: #000000 !important;
     background-color: var(--mainColor);
@@ -754,6 +760,7 @@ header .container {
     display: inline-block;
     padding: 0.9rem 1.9rem;
     margin: 5px;
+    text-align: center;
     font-family: linotte;
     color: #000000 !important;
     background-color: #03cc65;
@@ -761,10 +768,11 @@ header .container {
     text-transform: capitalize;
     transition: 0.3s;
 }
-
+#progress-value{}
 .custom_btn_orange {
     display: inline-block;
     padding: 0.9rem 1.9rem;
+    text-align: center;
     margin: 5px;
     font-family: linotte;
     color: #ffffff !important;
@@ -780,6 +788,7 @@ header .container {
     display: inline-block;
     padding: 0.9rem 1.9rem;
     margin: 5px;
+    text-align: center;
     font-family: linotte;
     color: #000000 !important;
     background-color: #ffffff;
@@ -789,6 +798,7 @@ header .container {
 }
 .custom_btn_yellow {
     display: inline-block;
+    text-align: center;
     padding: 0.9rem 1.9rem;
     margin: 5px;
     font-family: linotte;
@@ -1001,6 +1011,9 @@ header .container {
 }
 
 @media screen and (max-width: 870px) {
+    #progress{
+        visibility: hidden;
+    }
     .hamburger-menu {
         display: flex;
     }
@@ -1080,7 +1093,7 @@ header .container {
     }
 
     .text {
-        font-size: 0.95rem;
+        font-size: 20px;
         margin: 1.4rem 0 1.5rem;
     }
 
